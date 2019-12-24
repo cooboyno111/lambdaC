@@ -1,7 +1,7 @@
 #include <stdio.h>
 //sudo apt-get install libblocksruntime-dev
 //clang bl.c -fblocks -lBlocksRuntime -o bl
-//clang bl.c --target=mips-linux-gnu -fblocks -lBlocksRuntime -o test
+//clang bl.c -lBlocksRuntime -o test
 int reduce(int* balance,int balance_len,int(^fn)(int a,int b)){
     int index=0;
     int val=balance[0];
